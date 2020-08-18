@@ -5,7 +5,7 @@ import com.example.demo.dto.respoonse.CategoryResponse;
 import com.example.demo.model.Category;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface CategoryMapper {
     Category requestToModel(CategoryRequest categoryRequest);
 
